@@ -1,6 +1,6 @@
-Create Database Actividad
+CREATE DATABASE Actividad
 
-USE Actividad
+USE [Actividad]
 
 CREATE TABLE Carreras(
 	ID VARCHAR(4) NOT NULL PRIMARY KEY,
