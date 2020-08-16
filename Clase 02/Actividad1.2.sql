@@ -23,7 +23,7 @@ CREATE TABLE Idiomas (
 
 CREATE TABLE TipoIdiomas (
 	ID SMALLINT NOT NULL PRIMARY KEY IDENTITY(1, 1),
-	Idioma VARCHAR(50) NOT NULL CHECK(Idioma = 'Audio' OR Idioma = 'Subtitulo'),
+	Tipo VARCHAR(50) NOT NULL CHECK(Tipo = 'Audio' OR Tipo = 'Subtitulo'),
 );
 
 CREATE TABLE AudioSubtitulo (
@@ -60,7 +60,7 @@ CREATE TABLE Contenidos (
 	ID SMALLINT NOT NULL PRIMARY KEY IDENTITY(1,1),
 	IDClase INT NOT NULL FOREIGN KEY REFERENCES Clases(ID),
 	Tipo SMALLINT NOT NULL,
-	TamañoEnMB INT NULL CHECK (TamañoEnMB > 0),
+	TamaÃ±oEnMB INT NULL CHECK (TamaÃ±oEnMB > 0),
 	)
 
 CREATE TABLE TipoContenido(
