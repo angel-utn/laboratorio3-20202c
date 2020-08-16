@@ -35,6 +35,8 @@ CREATE TABLE AudioSubtitulo (
       FOREIGN KEY (IDCurso) REFERENCES Cursos (ID),
 		CONSTRAINT FK_audio
       FOREIGN KEY (IDIdioma) REFERENCES Idiomas (ID),
+      		CONSTRAINT FK_audio
+      FOREIGN KEY (Tipo) REFERENCES TipoIdiomas (ID)
 );
 
 
