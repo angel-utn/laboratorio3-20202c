@@ -1,0 +1,77 @@
+CREATE DATABASE MonkeyUniversity
+
+USE MonkeyUniversity
+
+CREATE TABLE Cursos(
+	ID INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	Nombre VARCHAR(50) NOT NULL,
+	FechaEstreno DATE NOT NULL CHECK(FechaEstreno < GETDATE()),
+	CostoCursado MONEY NOT NULL CHECK (CostoCursado >= 0),
+	CostoCertificacion MONEY NOT NULL CHECK (CostoCertificacion >= 0),
+	Nivel VARCHAR(50) NOT NULL CHECK(Nivel = 'Principiante' OR Nivel = 'Medio' OR Nivel =  'Avanzado')
+	)
+
+CREATE TABLE Categorias (
+	ID SMALLINT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	Nombre VARCHAR(50) NOT NULL,
+);
+
+CREATE TABLE Idiomas (
+	ID SMALLINT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	Idioma VARCHAR(50) NOT NULL,
+);
+
+CREATE TABLE TipoIdiomas (
+	ID SMALLINT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	Idioma VARCHAR(50) NOT NULL CHECK(Idioma = 'Audio' OR Idioma = 'Subtitulo'),
+);
+
+CREATE TABLE AudioSubtitulo (
+	IDCurso INT NOT NULL,
+	IDIdioma SMALLINT NOT NULL,
+	Tipo SMALLINT NOT NULL,
+	CONSTRAINT audio_x_curso PRIMARY KEY (IDCurso, IDIdioma,Tipo),
+		CONSTRAINT FK_curso2
+      FOREIGN KEY (IDCurso) REFERENCES Cursos (ID),
+		CONSTRAINT FK_audio
+      FOREIGN KEY (IDIdioma) REFERENCES Idiomas (ID),
+);
+
+
+CREATE TABLE CursosCategoria (
+	IDCurso INT NOT NULL,
+	IDCategoria SMALLINT NOT NULL,
+	CONSTRAINT curso_x_categoria PRIMARY KEY (IDCurso, IDCategoria),
+		CONSTRAINT FK_curso1
+      FOREIGN KEY (IDCurso) REFERENCES Cursos (ID),
+		CONSTRAINT FK_categoria 
+      FOREIGN KEY (IDCategoria) REFERENCES Categorias (ID)
+);
+
+CREATE TABLE Clases(
+	ID INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	IDCurso INT NOT NULL FOREIGN KEY REFERENCES Cursos(ID),
+	NClase SMALLINT NULL,
+	Nombre VARCHAR(50) NOT NULL,
+	Duracion SMALLINT NULL
+	)
+
+CREATE TABLE Contenidos (
+	ID SMALLINT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	IDClase INT NOT NULL FOREIGN KEY REFERENCES Clases(ID),
+	Tipo SMALLINT NOT NULL,
+	TamañoEnMB INT NULL CHECK (TamañoEnMB > 0),
+	)
+
+CREATE TABLE TipoContenido(
+	ID SMALLINT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	IDContenidos SMALLINT NOT NULL FOREIGN KEY REFERENCES Contenidos(ID),
+	Descripcion VARCHAR(50) NOT NULL,
+	)
+
+
+
+
+
+
+
