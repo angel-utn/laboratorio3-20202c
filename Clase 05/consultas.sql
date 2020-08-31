@@ -1,12 +1,38 @@
+Use MonkeyUniv
 -- (1) Listado con nombre de usuario de todos los usuarios y sus respectivos nombres y apellidos.
+Select  Usuarios.NombreUsuario,
+        Datos_Personales.Apellidos,
+        Datos_Personales.Nombres
+From Usuarios
+Inner Join Datos_Personales ON Usuarios.ID = Datos_Personales.ID
+
+Select U.NombreUsuario, DAT.Apellidos, DAT.Nombres, DAT.Email
+From Usuarios as U
+Inner Join Datos_Personales as DAT ON U.ID = DAT.ID
+
+-- Lo que realiza la cláusula join en memoria
+Select *
+From Usuarios as U
+Inner Join Datos_Personales as DAT ON U.ID = DAT.ID
+
 
 -- 2 Listado con apellidos, nombres, fecha de nacimiento y nombre del país de nacimiento. 
 
 -- (3) Listado con nombre de usuario, apellidos, nombres, email o celular de todos los usuarios que vivan en una domicilio cuyo nombre contenga el término 'Presidente' o 'General'. NOTA: Si no tiene email, obtener el celular.
+Select U.NombreUsuario, DAT.Apellidos, DAT.Nombres, isnull(DAT.Email, DAT.Celular) as InfoContacto, DAT.Domicilio
+From Usuarios AS U
+Inner Join Datos_Personales as DAT ON U.ID = DAT.ID
+Where Dat.Domicilio like '%Presidente%' or Dat.Domicilio like '%General%'
 
 -- 4 Listado con nombre de usuario, apellidos, nombres, email o celular o domicilio como 'Información de contacto'.  NOTA: Si no tiene email, obtener el celular y si no posee celular obtener el domicilio.
 
 -- (5) Listado con apellido y nombres, nombre del curso y costo de la inscripción de todos los usuarios inscriptos a cursos.  NOTA: No deben figurar los usuarios que no se inscribieron a ningún curso.
+select C.Nombre, DAT.Apellidos, DAT.Nombres, I.Costo
+From Cursos as C
+Inner Join Inscripciones as I ON C.ID = I.IDCurso
+Inner Join Usuarios as U ON U.ID = I.IDUsuario
+Inner Join Datos_Personales as DAT ON DAT.ID = U.ID
+Order by C.Nombre asc, Dat.Apellidos asc, DAT.Nombres Asc
 
 -- 6 Listado con nombre de curso, nombre de usuario y mail de todos los inscriptos a cursos que se hayan estrenado en el año 2020.
 
@@ -21,6 +47,9 @@
 -- 11 Listado con nombre y apellido de todos los usuarios que hayan cursado algún curso cuya categoría sea 'Historia'.
 
 -- (12) Listado con nombre de idioma, código de curso y código de tipo de idioma. Listar todos los idiomas indistintamente si no tiene cursos relacionados.
+Select I.Nombre, IxC.IDCurso, IxC.IDTipo
+From Idiomas as I
+Left Join Idiomas_x_Curso as IxC on I.ID = IxC.IDIdioma
 
 -- 13 Listado con nombre de idioma de todos los idiomas que no tienen cursos relacionados.
 

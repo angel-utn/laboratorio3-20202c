@@ -1,3 +1,5 @@
+Set dateformat 'YMD'
+go
 USE [MonkeyUniv]
 GO
 INSERT [dbo].[Paises] ([ID], [Nombre]) VALUES (1, N'Argentina')
@@ -112,61 +114,61 @@ INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Ge
 GO
 INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (5, N'Breyaue', N'Emmanuel David', CAST(N'1984-04-29' AS Date), N'M', N'1511731160', N'ebreyaue@utn.edu.ar', N'Cardenal Breyaue 28501', 1612, 1)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (6, N'Cacchione', N'Andres Omar', CAST(N'1978-01-07' AS Date), N'M', N'1511284177', N'null', N'Virrey Cacchione 2120', 1619, 1)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (6, N'Cacchione', N'Andres Omar', CAST(N'1978-01-07' AS Date), N'M', N'1511284177', null, N'Virrey Cacchione 2120', 1619, 1)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (7, N'Chaparro', N'Agustin', CAST(N'2001-11-07' AS Date), N'M', N'1511782647', N'null', N'Obispo Chaparro 4627', 1601, 5)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (7, N'Chaparro', N'Agustin', CAST(N'2001-11-07' AS Date), N'M', N'1511782647', null, N'Obispo Chaparro 4627', 1601, 5)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (8, N'Contreras', N'Juan Ignacio', CAST(N'1972-07-20' AS Date), N'M', N'null', N'null', N'Virrey Contreras 32614', 1607, 1)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (8, N'Contreras', N'Juan Ignacio', CAST(N'1972-07-20' AS Date), N'M', null, null, N'Virrey Contreras 32614', 1607, 1)
 GO
 INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (9, N'Cordoba', N'Ignacio David', CAST(N'1993-06-10' AS Date), N'M', N'1511268095', N'icordoba@hotmail.com.ar', N'Santa Cordoba 22474', 1624, 4)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (10, N'Diaz', N'Ailen Estefania', CAST(N'1984-06-24' AS Date), N'F', N'null', N'adiaz@hotmail.com.ar', N'Obispo Diaz 4132', 1626, 1)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (10, N'Diaz', N'Ailen Estefania', CAST(N'1984-06-24' AS Date), N'F', null, N'adiaz@hotmail.com.ar', N'Obispo Diaz 4132', 1626, 1)
 GO
 INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (11, N'Dominguez', N'Maximiliano Fernando Luis', CAST(N'1975-12-03' AS Date), N'M', N'1511381440', N'mdominguez@hotmail.com', N'Obispo Dominguez 22949', 1623, 6)
 GO
 INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (12, N'Fernandez', N'Daniel David', CAST(N'1978-12-24' AS Date), N'M', N'1511574306', N'dfernandez@hotmail.com', N'San Fernandez 39871', 1647, 1)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (13, N'Ferrari', N'Maria Silvana', CAST(N'1987-11-24' AS Date), N'F', N'null', N'mferrari@mail.com', N'Obispo Ferrari 6021', 1618, 1)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (13, N'Ferrari', N'Maria Silvana', CAST(N'1987-11-24' AS Date), N'F', null, N'mferrari@mail.com', N'Obispo Ferrari 6021', 1618, 1)
 GO
 INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (14, N'Ferreira', N'Cristian Nicolas', CAST(N'1990-04-18' AS Date), N'M', N'1511654956', N'cferreira@utn.edu.ar', N'General Ferreira 31627', 1602, 1)
 GO
 INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (15, N'Flori', N'Nicolas Ezequiel', CAST(N'1978-09-07' AS Date), N'M', N'1511449859', N'nflori@mail.com', N'Obispo Flori 33457', 1637, 2)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (16, N'Gonzalez Samperi', N'Matias Ezequiel', CAST(N'1977-09-06' AS Date), N'M', N'null', N'mgonzalez@mail.com', N'Presidente Gonzalez Samperi 10936', 1637, 3)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (16, N'Gonzalez Samperi', N'Matias Ezequiel', CAST(N'1977-09-06' AS Date), N'M', null, N'mgonzalez@mail.com', N'Presidente Gonzalez Samperi 10936', 1637, 3)
 GO
 INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (17, N'Gonzalez', N'Guillermo Adrian', CAST(N'1990-12-20' AS Date), N'M', N'1511181907', N'ggonzalez@utn.edu.ar', N'Virrey Gonzalez 18066', 1610, 1)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (18, N'Huarcaya Sánchez', N'Ricardo Alonso', CAST(N'1997-11-26' AS Date), N'M', N'1511170568', N'null', N'Comandante Huarcaya Sánchez 33580', 1603, 1)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (18, N'Huarcaya Sánchez', N'Ricardo Alonso', CAST(N'1997-11-26' AS Date), N'M', N'1511170568', null, N'Comandante Huarcaya Sánchez 33580', 1603, 1)
 GO
 INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (19, N'Ibazeta', N'Pablo Agustín', CAST(N'1985-10-24' AS Date), N'M', N'1511135879', N'pibazeta@hotmail.com.ar', N'Santa Ibazeta 20958', 1641, 1)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (20, N'Iglesias', N'Cristian', CAST(N'1986-09-26' AS Date), N'M', N'null', N'ciglesias@gmail.com', N'Virrey Iglesias 6558', 1638, 6)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (20, N'Iglesias', N'Cristian', CAST(N'1986-09-26' AS Date), N'M', null, N'ciglesias@gmail.com', N'Virrey Iglesias 6558', 1638, 6)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (21, N'Jesus Sipiran', N'Carlos Alfredo', CAST(N'1983-01-13' AS Date), N'M', N'null', N'cjesus@hotmail.com.ar', N'Santa Jesus Sipiran 10071', 1648, 1)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (21, N'Jesus Sipiran', N'Carlos Alfredo', CAST(N'1983-01-13' AS Date), N'M', null, N'cjesus@hotmail.com.ar', N'Santa Jesus Sipiran 10071', 1648, 1)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (22, N'Juarez', N'Juan Manuel', CAST(N'1976-06-23' AS Date), N'M', N'null', N'jjuarez@utn.edu.ar', N'San Juarez 16524', 1625, 1)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (22, N'Juarez', N'Juan Manuel', CAST(N'1976-06-23' AS Date), N'M', null, N'jjuarez@utn.edu.ar', N'San Juarez 16524', 1625, 1)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (23, N'Keegan', N'Ignacio Nicolas', CAST(N'1999-10-17' AS Date), N'M', N'null', N'ikeegan@utn.edu.ar', N'Virrey Keegan 31264', 1628, 6)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (23, N'Keegan', N'Ignacio Nicolas', CAST(N'1999-10-17' AS Date), N'M', null, N'ikeegan@utn.edu.ar', N'Virrey Keegan 31264', 1628, 6)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (24, N'Lopez', N'Gonzalo Ezequiel', CAST(N'1993-05-04' AS Date), N'M', N'null', N'glopez@mail.com', N'Virrey Lopez 34815', 1600, 1)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (24, N'Lopez', N'Gonzalo Ezequiel', CAST(N'1993-05-04' AS Date), N'M', null, N'glopez@mail.com', N'Virrey Lopez 34815', 1600, 1)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (25, N'Majdalani', N'Jeronimo', CAST(N'1988-02-07' AS Date), N'M', N'null', N'null', N'San Majdalani 27491', 1633, 1)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (25, N'Majdalani', N'Jeronimo', CAST(N'1988-02-07' AS Date), N'M', null, null, N'San Majdalani 27491', 1633, 1)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (26, N'Mendoza', N'Leonardo Oscar', CAST(N'1986-11-01' AS Date), N'M', N'null', N'lmendoza@utn.edu.ar', N'Virrey Mendoza 16565', 1633, 5)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (26, N'Mendoza', N'Leonardo Oscar', CAST(N'1986-11-01' AS Date), N'M', null, N'lmendoza@utn.edu.ar', N'Virrey Mendoza 16565', 1633, 5)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (27, N'Molinos Zola', N'Gabriel', CAST(N'1980-05-21' AS Date), N'M', N'null', N'gmolinos@hotmail.com', N'San Molinos Zola 32111', 1627, 1)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (27, N'Molinos Zola', N'Gabriel', CAST(N'1980-05-21' AS Date), N'M', null, N'gmolinos@hotmail.com', N'San Molinos Zola 32111', 1627, 1)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (28, N'Molteni', N'Bruno Mauricio', CAST(N'1988-11-16' AS Date), N'M', N'null', N'null', N'Santa Molteni 20053', 1646, 1)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (28, N'Molteni', N'Bruno Mauricio', CAST(N'1988-11-16' AS Date), N'M', null, null, N'Santa Molteni 20053', 1646, 1)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (29, N'Olivera', N'Alejandro Alberto', CAST(N'1993-03-14' AS Date), N'M', N'null', N'aolivera@mail.com', N'Batalla de Olivera 39116', 1604, 2)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (29, N'Olivera', N'Alejandro Alberto', CAST(N'1993-03-14' AS Date), N'M', null, N'aolivera@mail.com', N'Batalla de Olivera 39116', 1604, 2)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (30, N'Orellana', N'Carlos Alberto', CAST(N'1996-10-10' AS Date), N'M', N'null', N'corellana@hotmail.com', N'Obispo Orellana 7304', 1627, 1)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (30, N'Orellana', N'Carlos Alberto', CAST(N'1996-10-10' AS Date), N'M', null, N'corellana@hotmail.com', N'Obispo Orellana 7304', 1627, 1)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (31, N'Orihuela', N'Lucas Franco', CAST(N'1998-03-15' AS Date), N'M', N'null', N'lorihuela@hotmail.com.ar', N'Santa Orihuela 36108', 1641, 6)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (31, N'Orihuela', N'Lucas Franco', CAST(N'1998-03-15' AS Date), N'M', null, N'lorihuela@hotmail.com.ar', N'Santa Orihuela 36108', 1641, 6)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (32, N'Pais', N'Manuel Agustin', CAST(N'1991-11-27' AS Date), N'M', N'null', N'mpais@hotmail.com', N'Comandante Pais 8097', 1635, 1)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (32, N'Pais', N'Manuel Agustin', CAST(N'1991-11-27' AS Date), N'M', null, N'mpais@hotmail.com', N'Comandante Pais 8097', 1635, 1)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (33, N'Paolini Vattuone', N'Cristian Andres', CAST(N'1980-08-22' AS Date), N'M', N'null', N'cpaolini@utn.edu.ar', N'General Paolini Vattuone 35066', 1614, 6)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (33, N'Paolini Vattuone', N'Cristian Andres', CAST(N'1980-08-22' AS Date), N'M', null, N'cpaolini@utn.edu.ar', N'General Paolini Vattuone 35066', 1614, 6)
 GO
 INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (34, N'Pieruzzini Pla', N'Nestor Tomas', CAST(N'1976-12-05' AS Date), N'M', N'1511627856', N'npieruzzini@hotmail.com.ar', N'Comandante Pieruzzini Pla 16921', 1618, 5)
 GO
@@ -174,7 +176,7 @@ INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Ge
 GO
 INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (36, N'Rodriguez', N'Leandro Hernan', CAST(N'1990-12-05' AS Date), N'M', N'1511554236', N'lrodriguez@gmail.com', N'General Rodriguez 26037', 1647, 1)
 GO
-INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (37, N'Salcedo Paucar', N'Edwin Mishaell', CAST(N'1986-05-07' AS Date), N'M', N'1511321809', N'null', N'Virrey Salcedo Paucar 24247', 1606, 3)
+INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (37, N'Salcedo Paucar', N'Edwin Mishaell', CAST(N'1986-05-07' AS Date), N'M', N'1511321809', null, N'Virrey Salcedo Paucar 24247', 1606, 3)
 GO
 INSERT [dbo].[Datos_Personales] ([ID], [Apellidos], [Nombres], [Nacimiento], [Genero], [Celular], [Email], [Domicilio], [CP], [IDPais]) VALUES (38, N'Villalba', N'Hernan Gabriel', CAST(N'1972-11-26' AS Date), N'M', N'1511193441', N'hvillalba@gmail.com', N'Cardenal Villalba 17719', 1648, 4)
 GO
