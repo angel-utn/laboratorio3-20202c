@@ -1,0 +1,136 @@
+Ejercicio 11
+
+|-------------------|------------------|
+| Apellidos         | Nombres          |
+|-------------------|------------------|
+| Alberti           | Alan Fernando    |
+| Antezana Velazque | Marcos Daniel    |
+| Bianchi Di Rocco  | Oscar Alberto    |
+| Blanco            | Nazareno Tomas   |
+| Cacchione         | Andres Omar      |
+| Chaparro          | Agustin          |
+| Fernandez         | Daniel David     |
+| Ferrari           | Maria Silvana    |
+| Ferreira          | Cristian Nicolas |
+| Iglesias          | Cristian         |
+| Jesus Sipiran     | Carlos Alfredo   |
+| Juarez            | Juan Manuel      |
+| Lopez             | Gonzalo Ezequiel |
+| Majdalani         | Jeronimo         |
+| Repolledo Rodas   | Wendy Maite      |
+| Salcedo Paucar    | Edwin Mishaell   |
+| Villalba          | Hernan Gabriel   |
+| Villalva          | Lautaro Javier   |
+|-------------------|------------------|
+
+Ejercicio 16
+
+|--------------------------------------|------------|---------------|
+| Nombre                               | Estreno    | NombreUsuario |
+|--------------------------------------|------------|---------------|
+| Javascript 101                       | 2017-07-07 | aalberti      |
+| Historia del Rock Argentino          | 2020-08-20 | aalberti      |
+| Pixel art                            | 2019-10-11 | acacchione    |
+| Edad Media: Armas y t�cnicas b�licas | 2020-08-20 | acacchione    |
+| Lenguaje C                           | 2015-10-10 | achaparro     |
+| Guitarra                             | 2015-05-06 | achaparro     |
+| NULL                                 | NULL       | adiaz         |
+| Python 101                           | 2017-07-07 | aolivera      |
+| NULL                                 | NULL       | bmolteni      |
+| Preparaci�n de mermeladas            | 2020-08-10 | cferreira     |
+| Pixel art                            | 2019-10-11 | cferreira     |
+| Damas                                | 2008-04-11 | cferreira     |
+| Bordado: T�cnicas avanzadas          | 2018-07-03 | ciglesias     |
+| Ajedrez                              | 2008-04-11 | ciglesias     |
+| Go                                   | 2008-04-11 | ciglesias     |
+| Lenguaje C                           | 2015-10-10 | cjesus        |
+| Preparaci�n de mermeladas            | 2020-08-10 | cjesus        |
+| Historia del Rock Argentino          | 2020-08-20 | cjesus        |
+| NULL                                 | NULL       | corellana     |
+| Python 101                           | 2017-07-07 | cpaolini      |
+| Preparaci�n de mermeladas            | 2020-08-10 | dfernandez    |
+| Preparaci�n de mermeladas            | 2020-08-10 | dfernandez    |
+| Edad Media: Armas y t�cnicas b�licas | 2020-08-20 | dfernandez    |
+| NULL                                 | NULL       | ebreyaue      |
+| Edad Media: Armas y t�cnicas b�licas | 2020-08-20 | esalcedo      |
+| Python 101                           | 2017-07-07 | ggonzalez     |
+| Python 101                           | 2017-07-07 | glopez        |
+| Historia del Rock Argentino          | 2020-08-20 | glopez        |
+| Cocina italiana                      | 2019-09-09 | gmolinos      |
+| Python 101                           | 2017-07-07 | gmolinos      |
+| Javascript 101                       | 2017-07-07 | hvillalba     |
+| Ajedrez                              | 2008-04-11 | hvillalba     |
+| Javascript 101                       | 2017-07-07 | icordoba      |
+| Javascript 101                       | 2017-07-07 | ikeegan       |
+| Introducci�n a la pesca con mosca    | 2020-09-21 | ikeegan       |
+| NULL                                 | NULL       | jcontreras    |
+| Edad Media: Armas y t�cnicas b�licas | 2020-08-20 | jjuarez       |
+| Edad Media: Armas y t�cnicas b�licas | 2020-08-20 | jjuarez       |
+| Edad Media: Armas y t�cnicas b�licas | 2020-08-20 | jjuarez       |
+| Cocina italiana                      | 2019-09-09 | jmajdalani    |
+| Javascript 101                       | 2017-07-07 | jmajdalani    |
+| Guitarra                             | 2015-05-06 | jmajdalani    |
+| Lenguaje C                           | 2015-10-10 | lmendoza      |
+| Bordado: T�cnicas avanzadas          | 2018-07-03 | lmendoza      |
+| Cocina italiana                      | 2019-09-09 | lorihuela     |
+| Internet para dummies                | 2010-08-19 | lrodriguez    |
+| Lenguaje C                           | 2015-10-10 | lvillalva     |
+| Introducci�n a la pesca con mosca    | 2020-09-21 | lvillalva     |
+| Guitarra                             | 2015-05-06 | lvillalva     |
+| Internet para dummies                | 2010-08-19 | lvillalva     |
+| Edad Media: Armas y t�cnicas b�licas | 2020-08-20 | mantezana     |
+| NULL                                 | NULL       | mdominguez    |
+| Javascript 101                       | 2017-07-07 | mferrari      |
+| Edad Media: Armas y t�cnicas b�licas | 2020-08-20 | mferrari      |
+| Cocina italiana                      | 2019-09-09 | mgonzalez     |
+| Pixel art                            | 2019-10-11 | mpais         |
+| Bordado: T�cnicas avanzadas          | 2018-07-03 | nblanco       |
+| Edad Media: Armas y t�cnicas b�licas | 2020-08-20 | nblanco       |
+| Edad Media: Armas y t�cnicas b�licas | 2020-08-20 | nblanco       |
+| Edad Media: Armas y t�cnicas b�licas | 2020-08-20 | nblanco       |
+| NULL                                 | NULL       | nflori        |
+| Lenguaje C                           | 2015-10-10 | npieruzzini   |
+| Guitarra                             | 2015-05-06 | obianchi      |
+| Internet para dummies                | 2010-08-19 | obianchi      |
+| Introducci�n a la pesca con mosca    | 2020-09-21 | pibazeta      |
+| NULL                                 | NULL       | rhuarcaya     |
+| Python 101                           | 2017-07-07 | wrepolledo    |
+| Edad Media: Armas y t�cnicas b�licas | 2020-08-20 | wrepolledo    |
+|--------------------------------------|------------|---------------|
+
+Ejercicio 17
+
+|------------------|---------------------------|------------|--------|------------------------|
+| Apellidos        | Nombres                   | Nacimiento | Genero | Email                  |
+|------------------|---------------------------|------------|--------|------------------------|
+| Diaz             | Ailen Estefania           | 1984-06-24 | F      | adiaz@hotmail.com.ar   |
+| Molteni          | Bruno Mauricio            | 1988-11-16 | M      | null                   |
+| Orellana         | Carlos Alberto            | 1996-10-10 | M      | corellana@hotmail.com  |
+| Breyaue          | Emmanuel David            | 1984-04-29 | M      | ebreyaue@utn.edu.ar    |
+| Contreras        | Juan Ignacio              | 1972-07-20 | M      | null                   |
+| Dominguez        | Maximiliano Fernando Luis | 1975-12-03 | M      | mdominguez@hotmail.com |
+| Flori            | Nicolas Ezequiel          | 1978-09-07 | M      | nflori@mail.com        |
+| Huarcaya S�nchez | Ricardo Alonso            | 1997-11-26 | M      | null                   |
+|------------------|---------------------------|------------|--------|------------------------|
+
+Ejercicio 21
+
+|--------------------------------------|------------|-----------|
+| Nombre                               | CostoCurso | TipoCosto |
+|--------------------------------------|------------|-----------|
+| Lenguaje C                           | 14000.0000 | Accesible |
+| Cocina italiana                      | 20000.0000 | Costoso   |
+| Bordado: T�cnicas avanzadas          | 5000.0000  | Accesible |
+| Python 101                           | 13000.0000 | Accesible |
+| Javascript 101                       | 10000.0000 | Accesible |
+| Introducci�n a la pesca con mosca    | 17000.0000 | Costoso   |
+| Preparaci�n de mermeladas            | 10000.0000 | Accesible |
+| Pixel art                            | 0.0000     | Gratis    |
+| Guitarra                             | 0.0000     | Gratis    |
+| Edad Media: Armas y t�cnicas b�licas | 50000.0000 | Costoso   |
+| Historia del Rock Argentino          | 20000.0000 | Costoso   |
+| Ajedrez                              | 7000.0000  | Accesible |
+| Go                                   | 7000.0000  | Accesible |
+| Damas                                | 7000.0000  | Accesible |
+| Internet para dummies                | 5000.0000  | Accesible |
+|--------------------------------------|------------|-----------|
