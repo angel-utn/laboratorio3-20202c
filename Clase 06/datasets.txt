@@ -1,0 +1,101 @@
+15
+
+|-------------------|-------------------|---------------------|
+| Apellidos         | Nombres           | Cursado más costoso |
+|-------------------|-------------------|---------------------|
+| Chaparro          | Agustin           | 14000.0000          |
+| Alberti           | Alan Fernando     | 20000.0000          |
+| Olivera           | Alejandro Alberto | 13000.0000          |
+| Cacchione         | Andres Omar       | 50000.0000          |
+| Jesus Sipiran     | Carlos Alfredo    | 20000.0000          |
+| Iglesias          | Cristian          | 7000.0000           |
+| Paolini Vattuone  | Cristian Andres   | 13000.0000          |
+| Ferreira          | Cristian Nicolas  | 10000.0000          |
+| Fernandez         | Daniel David      | 50000.0000          |
+| Salcedo Paucar    | Edwin Mishaell    | 50000.0000          |
+| Molinos Zola      | Gabriel           | 20000.0000          |
+| Lopez             | Gonzalo Ezequiel  | 20000.0000          |
+| Gonzalez          | Guillermo Adrian  | 13000.0000          |
+| Villalba          | Hernan Gabriel    | 10000.0000          |
+| Cordoba           | Ignacio David     | 10000.0000          |
+| Keegan            | Ignacio Nicolas   | 17000.0000          |
+| Majdalani         | Jeronimo          | 20000.0000          |
+| Juarez            | Juan Manuel       | 50000.0000          |
+| Villalva          | Lautaro Javier    | 17000.0000          |
+| Rodriguez         | Leandro Hernan    | 5000.0000           |
+| Mendoza           | Leonardo Oscar    | 14000.0000          |
+| Orihuela          | Lucas Franco      | 20000.0000          |
+| Pais              | Manuel Agustin    | 0.0000              |
+| Antezana Velazque | Marcos Daniel     | 50000.0000          |
+| Ferrari           | Maria Silvana     | 50000.0000          |
+| Gonzalez Samperi  | Matias Ezequiel   | 20000.0000          |
+| Blanco            | Nazareno Tomas    | 50000.0000          |
+| Pieruzzini Pla    | Nestor Tomas      | 14000.0000          |
+| Bianchi Di Rocco  | Oscar Alberto     | 5000.0000           |
+| Ibazeta           | Pablo Agustín     | 17000.0000          |
+| Repolledo Rodas   | Wendy Maite       | 50000.0000          |
+|-------------------|-------------------|---------------------|
+
+17
+
+|---------------------------|----------|
+| Nombre                    | Cantidad |
+|---------------------------|----------|
+| Lenguaje C                | 26       |
+| Preparación de mermeladas | 12       |
+|---------------------------|----------|
+
+20
+
+|----------|----------|
+| Nombre   | Cantidad |
+|----------|----------|
+| Historia | 6        |
+|----------|----------|
+
+22
+
+|--------------------------------------|--------------|------|-------------|
+| Nombre                               | Nombre       | Año  | CostoTotal  |
+|--------------------------------------|--------------|------|-------------|
+| Ajedrez                              | Principiante | 2008 | 14000.0000  |
+| Bordado: Técnicas avanzadas          | Avanzado     | 2018 | 15000.0000  |
+| Cocina italiana                      | NULL         | 2019 | 80000.0000  |
+| Damas                                | Principiante | 2008 | 7000.0000   |
+| Edad Media: Armas y técnicas bélicas | NULL         | 2020 | 600000.0000 |
+| Go                                   | Principiante | 2008 | 7000.0000   |
+| Guitarra                             | Principiante | 2015 | 0.0000      |
+| Historia del Rock Argentino          | NULL         | 2020 | 60000.0000  |
+| Internet para dummies                | NULL         | 2010 | 15000.0000  |
+| Introducción a la pesca con mosca    | Aficionado   | 2020 | 51000.0000  |
+| Javascript 101                       | Principiante | 2017 | 60000.0000  |
+| Lenguaje C                           | Principiante | 2015 | 70000.0000  |
+| Pixel art                            | Principiante | 2019 | 0.0000      |
+| Preparación de mermeladas            | Medio        | 2020 | 40000.0000  |
+| Python 101                           | Principiante | 2017 | 78000.0000  |
+|--------------------------------------|--------------|------|-------------|
+
+23
+
+|-----------------------------|------------|--------------------|------------|
+| Nombre                      | CostoCurso | CostoCertificacion | Inscriptos |
+|-----------------------------|------------|--------------------|------------|
+| Ajedrez                     | 7000.0000  | 700.0000           | 0          |
+| Bordado: Técnicas avanzadas | 5000.0000  | 1000.0000          | 3          |
+| Damas                       | 7000.0000  | 700.0000           | 0          |
+| Go                          | 7000.0000  | 700.0000           | 0          |
+| Guitarra                    | 0.0000     | 1500.0000          | 4          |
+| Internet para dummies       | 5000.0000  | 50.0000            | 0          |
+| Pixel art                   | 0.0000     | 15000.0000         | 3          |
+|-----------------------------|------------|--------------------|------------|
+
+29
+
+|-----------|----------------|------------------------|---------------|
+| Apellidos | Nombres        | Email                  | DuraciónTotal |
+|-----------|----------------|------------------------|---------------|
+| Blanco    | Nazareno Tomas | nblanco@gmail.com      | 2915          |
+| Fernandez | Daniel David   | dfernandez@hotmail.com | 1520          |
+| Ferrari   | Maria Silvana  | mferrari@mail.com      | 1280          |
+| Juarez    | Juan Manuel    | jjuarez@utn.edu.ar     | 2760          |
+|-----------|----------------|------------------------|---------------|

@@ -1,4 +1,9 @@
 Use MonkeyUniv
+-- Cross Join
+Select DAT.Apellidos, P.Nombre From Datos_Personales as DAT
+Cross Join Paises as P
+
+Use MonkeyUniv
 -- (1) Listado con nombre de usuario de todos los usuarios y sus respectivos nombres y apellidos.
 Select  Usuarios.NombreUsuario,
         Datos_Personales.Apellidos,
@@ -62,6 +67,14 @@ Where C.ID = 11
 -- 10 Listado con nombre y apellido y mail de todos los instructores. Sin repetir.
 
 -- 11 Listado con nombre y apellido de todos los usuarios que hayan cursado algún curso cuya categoría sea 'Historia'.
+Select distinct DAT.Apellidos, DAT.Nombres From Datos_Personales as DAT
+Inner Join Usuarios as U ON U.ID = DAT.ID
+Inner Join Inscripciones as I ON U.ID = I.IDUsuario
+Inner Join Cursos as C ON C.ID = I.IDCurso
+Inner Join Categorias_x_Curso as CxC on C.ID = CxC.IDCurso
+Inner Join Categorias as CAT ON CAT.ID = CxC.IDCategoria
+Where CAT.Nombre = 'Historia'
+Order by DAT.Apellidos
 
 -- (12) Listado con nombre de idioma, código de curso y código de tipo de idioma. Listar todos los idiomas indistintamente si no tiene cursos relacionados.
 Select I.Nombre, IxC.IDCurso, IxC.IDTipo
@@ -89,3 +102,11 @@ Right Join Paises as P on P.ID = DAT.IDPais
 -- 20 Listado con nombre del curso y todos los importes de los pagos relacionados.
 
 -- 21 Listado con nombre de curso, costo de cursado y una leyenda que indique "Costoso" si el costo de cursado es mayor a $ 15000, "Accesible" si el costo de cursado está entre $2500 y $15000, "Barato" si el costo está entre $1 y $2499 y "Gratis" si el costo es $0.
+Select C.Nombre, C.CostoCurso,
+    Case
+    When C.CostoCurso > 15000 then 'Costoso'
+    When C.CostoCurso >= 2500 then 'Accesible'
+    When C.CostoCurso >= 1 then 'Barato'
+    Else 'Gratis'
+    End as 'Costo descriptivo'
+From Cursos as C
