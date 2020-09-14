@@ -66,16 +66,58 @@ having max(P.importe) > 7500
 -- 21  Listado con tipos de contenido y la cantidad de contenidos asociados a cada tipo. Mostrar aquellos tipos que no hayan registrado contenidos con cantidad 0.
 
 -- 22  Listado con Nombre del curso, nivel, año de estreno y el total recaudado en concepto de inscripciones. Listar aquellos cursos sin inscripciones con total igual a $0.
+Select C.Nombre, Year(C.Estreno) as Año, N.Nombre as Nivel, Isnull(Sum(I.Costo), 0) as Rec From Cursos as C
+Left Join Niveles as N ON N.ID = C.IDNivel
+Left Join Inscripciones as I ON C.ID = I.IDCurso
+Group by C.Nombre, Year(C.Estreno), N.Nombre
 
 -- 23  Listado con Nombre del curso, costo de cursado y certificación y cantidad de usuarios distintos inscriptos cuyo costo de cursado sea menor a $10000 y cuya cantidad de usuarios inscriptos sea menor a 5. Listar aquellos cursos sin inscripciones con cantidad 0.
+select c.nombre, c.costocurso, c.CostoCertificacion, count(distinct i.IDUsuario) as 'Usuarios distintos'
+	from Cursos as c left join Inscripciones as i on i.IDCurso=c.ID
+	where i.Costo < 10000
+	group by c.Nombre, c.costocurso,c.CostoCertificacion 
+    having count(distinct i.idusuario)<5
 
 -- 24  Listado con Nombre del curso, fecha de estreno y nombre del nivel del curso que más recaudó en concepto de certificaciones.
+Select Top 1 C.Nombre, C.Estreno, N.Nombre as Nivel From Cursos as C
+Left Join Niveles as N ON N.ID = C.IDNivel
+Inner Join Inscripciones as I ON C.ID = I.IDCurso
+Inner Join Certificaciones as CE ON I.ID = CE.IDInscripcion
+Group By C.Nombre, C.Estreno, N.Nombre
+Order by Sum(Ce.Costo) Desc
 
 -- 25  Listado con Nombre del idioma del idioma más utilizado como subtítulo.
+Select Top 1 I.Nombre, Count(*) as CantidadSubtitulo From Idiomas as I
+Inner Join Idiomas_x_Curso as IxC ON I.ID = IxC.IDIdioma
+Inner Join TiposIdioma as TI ON TI.ID = IxC.IDTipo
+Where TI.Nombre Like 'Subtítulo'
+Group By I.Nombre
+Order By CantidadSubtitulo Desc
+
 
 -- 26  Listado con Nombre del curso y promedio de puntaje de reseñas apropiadas.
+Select CU.Nombre, AVG(R.Puntaje) as Promedio
+From Cursos as CU
+Inner Join Inscripciones as I ON CU.ID = I.IDCurso
+Inner Join Reseñas as R ON I.ID = R.IDInscripcion
+Where R.Inapropiada = 0
+Group by CU.Nombre
 
 -- 27  Listado con Nombre de usuario y la cantidad de reseñas inapropiadas que registró.
+-- Angel
+Select U.nombreusuario, count(R.IDInscripcion) From Usuarios as U
+Left Join Inscripciones as I ON U.ID = I.IDUsuario
+Left Join Reseñas as R ON I.ID = R.IDInscripcion
+Where R.Inapropiada = 1 OR R.Inapropiada IS Null
+Group By U.NombreUsuario
+order by u.NombreUsuario asc
+
+-- Caccione/Majdalani
+select u.NombreUsuario, sum(cast(r.inapropiada as int)) as 'Cantidad de reseñas inapropiadas'
+	from Usuarios as u left join Inscripciones as i on u.ID=i.IDUsuario
+	left join Reseñas as r on r.IDInscripcion=i.ID
+	group by u.NombreUsuario
+	order by u.NombreUsuario asc
 
 -- 28  Listado con Nombre del curso, nombre y apellidos de usuarios y la cantidad de veces que dicho usuario realizó dicho curso. No mostrar cursos y usuarios que contabilicen cero.
 
