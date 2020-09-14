@@ -81,6 +81,18 @@ having max(P.importe) > 7500
 
 -- 29  Listado con Apellidos y nombres, mail y duración total en concepto de clases de cursos a los que se haya inscripto. Sólo listar información de aquellos registros cuya duración total supere los 400 minutos.
 
+select Dat.Apellidos,
+	   Dat.Nombres,
+	   Dat.Email,
+	   sum(Cla.Duracion) as DuracionClases
+from Datos_Personales as Dat
+join Usuarios as U on U.ID = Dat.ID
+join Inscripciones as I on I.IDUsuario = U.ID
+join Cursos as C on C.ID = I.IDCurso
+join Clases as Cla on Cla.IDCurso = C.ID
+group by Dat.Apellidos, Dat.Nombres, Dat.Email
+having	sum(Cla.Duracion)>400
+
 -- 30  Listado con nombre del curso y recaudación total. La recaudación total consiste en la sumatoria de costos de inscripción y de certificación. Listarlos ordenados de mayor a menor por recaudación.
 
 
